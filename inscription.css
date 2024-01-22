@@ -1,0 +1,93 @@
+*
+{
+    font-family: Courgette;
+} 
+.titre
+{
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    animation:myanimation 3s infinite;
+    font-family: Courgette;
+}
+@keyframes myanimation{
+                0%{color:#008791;}
+                10%{color:#009140;}
+                25%{color:#009150;}
+                35%{color: #009160;}
+                50%{color:#009170;}
+                75%{color:#009180;}
+                100%{color: #009193;}
+                }
+*, body, .titre
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e7e7e7;
+    color: #009193;
+}
+.container
+{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+.login-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    width: 360px;
+}
+
+.login-content h2 {
+    margin: 15px 0;
+    color: #009193;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.login-content .input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid grey;
+}
+.btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #009170, #009195, #009193);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover{
+    color: black;
+}
+[type="text"],[type="password"]{
+    margin: 10px 0;
+    padding-left:10px ;
+    padding: 10px;
+    width: 340px;
+    font-size: 1rem;
+    border: solid 1px #e7e7e7 ;
+    border-bottom-color: #d1adad ;
+    outline: none;
+    box-sizing: border-box;
+}
+
